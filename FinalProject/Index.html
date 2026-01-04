@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SilverTwist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-text">
+        <h1>StepFit</h1>
+        <p>Twister-style Smart Exercise Game</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="instruction">
+    <h2>Instruction</h2>
+    <div>
+    <p class="introText">
+        Welcome to StepFit! Get ready to twist and turn on our smart exercise mat.<br>Follow the color and limb instructions to stay active and have fun.<br>Click "Start" to begin your fitness adventure!
+    </p>
+    </div>
+    <div>
+      <div class="HF">
+        <div class="H">
+            <img class="handimg" src="./img/hand.png" alt="Hand">
+            <P class="Rfoot">= Hand</P>
+        </div>
+        <div class="F">
+            <img class="footimg" src="./img/footprint.png" alt="Foot">
+            <P class="Rfoot">= Foot</P>
+        </div>
+      </div>
+        <div class="RLFoot">
+            <p>L = Left</p>
+            <P class="Rfoot">R = Right</P>
+        </div>
+        <div class="Dots">
+            <div class="Rdot"></div>
+            <p>= Red</p>
+        </div>
+        <div class="Dots">
+            <div class="Bdot"></div>
+            <p>= Blue</p>
+        </div>
+        <div class="Dots">
+            <div class="Ydot"></div>
+            <p>= Yellow</p>
+        </div>
+        <div class="Dots">
+            <div class="Gdot"></div>
+            <p>= Green</p>
+        </div>
+        <div class="Dots">
+            <div class="Odot"></div>
+            <p>= Orange</p>
+        </div>
+        <div class="Dots1">
+            <p>L</p>
+            <img class="foothandimg" src="./img/footprint.png" alt="Foot">
+            <div class="Rdot"></div>
+            <p>= Left Foot to Red</p>
+        </div>
+    </div>
+    </section>
+    <!-- Control Buttons -->
+    <section class="controls">
+  <a href="Game.html">
+    <button>Start</button>
+  </a>
+</section>
+  </main>
+</body>
+</html>

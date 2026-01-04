@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StepFit</title>
+  <link rel="stylesheet" href="Game.css"/>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="Btns">
+      <a class="Btn" href="Index.html">
+        <img class="homeButton" src="./img/home.png" alt="Home">
+      </a>
+    </div>
+    <div class="header-text">
+        <h1>StepFit</h1>
+        <p>Twister-style Smart Exercise Game</p>
+    </div>
+    <div class="Btns">
+      <a class="Btn" href="Index.html">
+        <img class="backButton" src="./img/left.png" alt="Back">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Game Instruction -->
+  <section class="instruction">
+    <div id="instructionText" class="instruction-step">
+      <span id="LR">L</span> <!-- Left / Right -->
+      <img id="HandFoot" class="foothandimg" src="./img/footprint.png" alt="Foot/Hand"> <!-- Foot / Hand -->
+      <div id="ColorDot" class="Rdot" style="background:red;"></div> <!-- 顏色 -->
+    </div>
+  </section>
+
+    <!-- <section class="incourage">
+      <img class="Awsome" src="./img/Awsome.png" alt="Encouragement">
+      <img class="YouCanDoIt" src="./img/YouCanDoIt.png" alt="Encouragement">
+    </section>-->
+
+    <!-- Smart Mat Area -->
+    <section class="mat">
+      <div class="circle" data-mat="1"></div>
+      <div class="circle" data-mat="2"></div>
+      <div class="circle" data-mat="3"></div>
+      <div class="circle" data-mat="4"></div>
+      <div class="circle" data-mat="5"></div>
+      <div class="circle" data-mat="6"></div>
+      <div class="circle" data-mat="7"></div>
+      <div class="circle" data-mat="8"></div>
+      <div class="circle" data-mat="9"></div>
+    </section>
+
+    <!-- 踩對音效 -->
+    <audio id="correctSound" src="./audio/correct.mp3"></audio>
+
+    <!-- 踩錯音效 -->
+    <audio id="wrongSound" src="./audio/wrong.mp3"></audio>
+
+    <audio id="fallSound" src="./audio/warning.mp3"></audio>
+
+    <!-- Alert -->
+    <div id="alertBox" class="alert">
+      <div class="alertText">
+        <img class="exmark" src="./img/security.png" alt="Alert">
+        <h1>FALL</h1>
+      </div>
+      <p>Alert caregiver automatically in 10seconds</p>
+      <div class="alertBtn">
+        <button id="confirmBtn" class="comfirm-button">Alert</button>
+        <button id="cancelBtn" class="cancel-button">I'm OK</button>
+      </div>
+    </div>
+    <!--<button id="testAlertBtn" style="position:fixed; top:20px; left:20px; z-index:9999;">Test Alert</button>-->
+  </main>
+</body>
+</html>
